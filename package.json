@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "discord.js": "^13.7.0"
+  },
+  "name": "apikibot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardosouzac/apikibot.git"
+  },
+  "author": "l0x00en",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardosouzac/apikibot/issues"
+  },
+  "homepage": "https://github.com/leonardosouzac/apikibot#readme",
+  "description": ""
+}

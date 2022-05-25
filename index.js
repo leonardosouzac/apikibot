@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const prefix = '!sec';
+const prefix = "!sec"
 
 const client = new Discord.Client({
     allowedMentions: {
