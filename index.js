@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const config = require('./config.json');
-
+const shell = require('./run_commands.js');
 
 const client = new Discord.Client({
     allowedMentions: {
@@ -17,6 +17,7 @@ const client = new Discord.Client({
 
 client.on("ready", () => {
     console.log("Apiker está online.")
+    global.shell = new shell (client);
 })
 
 
