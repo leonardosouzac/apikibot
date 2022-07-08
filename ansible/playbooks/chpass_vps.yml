@@ -1,0 +1,12 @@
+---
+  - hosts: aws-vps
+    become: yes
+    tasks:
+      - name: criar arquivo
+        copy: src=ansible/command-line-utils/basic-auth/chpass_shared.sh dest=/tmp/change-apiki-password.sh
+
+      - name: chmod +x file
+        shell: chmod +x /tmp/change-apiki-password.sh
+
+      - name: trocar senha
+        ansible.builtin.raw: /tmp/change-apiki-password.sh "{{command_to_run}}"

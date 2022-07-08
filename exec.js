@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
 
   message.channel.send("Perae").then((m) => m.delete({ timeout: 500 }));
 
-  process.exec(args.joi(""), (error, stdout) => {
+  process.exec(args.join(""), (error, stdout) => {
     let response = error || stdout;
     message.channel.send(
       response,
